@@ -1,12 +1,9 @@
-x = [[12,7],
-     [4,5],
-     [3,8]]
+x = 5
+y = 10
 
-hasil = [[0,0,0],[0,0,0]]
+temp = x
+x = y
+y = temp
 
-for i in range(len(x)):
-    for j in range(len(x[0])):
-        hasil[j][i] = x[i][j]
-
-for h in hasil:
-    print(h)
+print('nilai x sekarang : {}'.format(x))
+print('nilai y sekarang : {}'.format(y))
